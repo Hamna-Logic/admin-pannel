@@ -1,18 +1,22 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
-import { Button, Stack } from "react-bootstrap";
+
+import NavBar from "./components/nav-bar";
+import Sidebar from "./components/sidebar";
+import Footer from "./components/footer";
 
 function App() {
   return (
     <>
-      <Stack direction="horizontal" gap={2}>
-        <Button as="a" variant="primary">
-          Button as link
-        </Button>
-        <Button as="a" variant="success">
-          Button as link
-        </Button>
-      </Stack>
+      <div className="navbar-container">
+        <NavBar />
+      </div>
+      <div className="sidebar-container">
+        <Sidebar />
+        </div>
+      <div className="footer-container">
+        <Footer />
+      </div>
     </>
   );
 }
